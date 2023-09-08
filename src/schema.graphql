@@ -1,0 +1,11 @@
+input HelloInput {
+  name: String
+}
+
+extend input HelloInput {
+  age: Int
+}
+
+type Query {
+  hello(input: HelloInput): String!
+}
